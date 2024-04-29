@@ -63,9 +63,32 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+gem "guard", "~> 2.18"
+gem "guard-minitest", "~> 2.4"
+
+gem "minitest-reporters", "~> 1.6"
+
+gem "minitest-focus", "~> 1.4", :group => :test
+gem "minitest-hooks", "~> 1.5", :group => :test
+gem "minitest-rails", "~> 7.1", :group => :test
+gem "minitest-given", "~> 3.8", :group => :test
+
+gem "mocha", "~> 2.2"
+
 end
 
 gem "vite_rails", "~> 3.0"
 gem "vite_ruby", "~> 3.5"
 
 gem "tailwindcss-rails", "~> 2.5"
+
+gem "shoulda", "~> 4.0"
+
+gem "vcr", "~> 6.2", :group => :test
+
+gem "webmock", "~> 3.23", :group => :test
+
+gem "devise", "~> 4.9"
+
+gem "cuprite", "~> 0.15", :group => :test
