@@ -35,19 +35,3 @@ services:
       VITE_RUBY_HOST: 0.0.0.0
     ports:
       - 3036:3036
-
-  sidekiq:
-    <<: *dev
-    command: ["bundle", "exec", "sidekiq"]
-    container_name: sidekiq
-    profiles: 
-      - sidekiq
-
-  erd:
-    <<: *dev
-    build:
-      dockerfile: ./mise/containers/app/Dockerfile.erd
-    command: ["bundle", "exec", "erd"]
-    container_name: erd
-    profiles: 
-      - erd

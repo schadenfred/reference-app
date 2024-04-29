@@ -64,10 +64,3 @@ services:
     profiles: 
       - builder  
 
-  builder-erd:
-    <<: *base
-    build:
-      dockerfile: ./mise/containers/app/Dockerfile.erd
-    depends_on: 
-      - builder-cache
-    image: builder/erd
