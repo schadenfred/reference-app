@@ -30,7 +30,7 @@ services:
       - redis:/data
 
   roro:  
-    image: handsomefencer/roro:development
+    image: handsomefencer/roro
     stdin_open: true
     tty: true
     volumes:
